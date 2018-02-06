@@ -5,7 +5,10 @@
 		<meta charset="utf-8" lang="en">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="jumbotron">
@@ -14,17 +17,17 @@
 					<nav class="navbar navbar-expand-lg navbar-light">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item active">
-								<a class="nav-link" href="#">home</a>
+								<a class="nav-link" href="javascript:;">home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">photoapp</a>
+								<a class="nav-link" href="javascript:;">photoapp</a>
 							</li>
 							<a class="navbar-brand"><img src="images/01. camera.png" alt="camera"></a>
 							<li class="nav-item">
-								<a class="nav-link" href="#">design</a>
+								<a class="nav-link" href="javascript:;">design</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">download</a>
+								<a class="nav-link" href="javascript:;">download</a>
 							</li>
 						</ul>
 					</nav>
@@ -50,7 +53,7 @@
 				<div class="row">
 					<div class="left-side col-xs-6">
 						<div class="shape"></div>
-						<h2>rappresent your life with a simple photo</h2>
+						<h2>represent your life with a simple photo</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -72,18 +75,57 @@
 						<img class="phone" src="images/03. phone.png" alt="Phone">
 					</div>
 					<div class="right-side col-xs-6">
-						<h2>design</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. </p>
-						<button class="btn-lg btn-success">learn more</button>
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="item active">
+									<h2>design 1</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. </p>
+									<button class="btn-lg btn-success">learn more</button>
+								</div>
+					 			<div class="item">
+									<h2>design 2</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. </p>
+									<button class="btn-lg btn-success">learn more</button>
+								</div>
+								<div class="item">
+									<h2>design 3</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. </p>
+									<button class="btn-lg btn-success">learn more</button>
+								</div>
+								<div class="item">
+									<h2>design 4</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. </p>
+									<button class="btn-lg btn-success">learn more</button>
+								</div>
+								<div class="item">
+									<h2>design 5</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. </p>
+									<button class="btn-lg btn-success">learn more</button>
+								</div>
+							</div>
+						</div>
+						
 						<div class="counter">
 							<div class="pager">
 								0<span id="pageNumber"></span>/05
 								<div class="chevrons">
-									<a id="leftChevron" href="javascript:;"><i class="fas fa-chevron-left fa-2x"></i></a>
-									<a id="rightChevron" href="javascript:;"><i class="fas fa-chevron-right fa-2x"></i></a>
+									<a id="left carousel-control leftChevron" href="#myCarousel" data-slide="prev"><i class="fas fa-chevron-left fa-2x"></i></a>
+									<a id="right carousel-control rightChevron" href="#myCarousel" data-slide="next"><i class="fas fa-chevron-right fa-2x"></i></a>
 								</div>
 							</div>
 						</div>
@@ -95,27 +137,107 @@
 			<div class="container">
 				<div class="row">
 					<div class="chevrons">
-						<a id="leftChevron" href="javascript:;"><i class="fas fa-chevron-left fa-2x"></i></a>
-						<a id="rightChevron" href="javascript:;"><i class="fas fa-chevron-right fa-2x"></i></a>
+						<a id="left carousel-control" href="#otherCarousel" data-slide="prev"><i class="fas fa-chevron-left fa-2x"></i></a>
+						<a id="right carousel-control" href="#otherCarousel" data-slide="next"><i class="fas fa-chevron-right fa-2x"></i></a>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-4">
+					<div class="col-md-3">
 						<div class="col-centered">
 							<img class="photo" src="images/06. camera.png">
 							<h2>our community</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 						</div>
 					</div>
-					<div class="col-xs-4">
-						<img class="photo" src="images/04. car.png">
-					</div>
-					<div class="col-xs-4">
-						<img class="photo" src="images/04. leaves.png">
+					<div class="col-md-9">
+						<div class="carousel slide" id="otherCarousel">
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="col-md-6"><a href="javascript:;"><img src="images/04. car.png" class="img-responsive"></a></div>
+								</div>
+								<div class="item">
+									<div class="col-md-6"><a href="javascript:;"><img src="images/04. leaves.png" class="img-responsive"></a></div>
+								</div>
+								<div class="item">
+									<div class="col-md-6"><a href="javascript:;"><img src="images/04. baloon.png" class="img-responsive"></a></div>
+								</div>
+								<div class="item">
+						 			<div class="col-md-6"><a href="javascript:;"><img src="images/04. birds.png" class="img-responsive"></a></div>
+								</div>
+								<div class="item">
+									<div class="col-md-6"><a href="javascript:;"><img src="images/04. gorilla.png" class="img-responsive"></a></div>
+								</div>
+								<div class="item">
+									<div class="col-md-6"><a href="javascript:;"><img src="images/04. nebula.png" class="img-responsive"></a></div>
+								</div>
+								<div class="item">
+									<div class="col-md-6"><a href="javascript:;"><img src="images/04. panda.png" class="img-responsive"></a></div>
+								</div>
+								<div class="item">
+									<div class="col-md-6"><a href="javascript:;"><img src="images/04. seagull.png" class="img-responsive"></a></div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="subscription">
+			<div class="jumbotron">
+				<div class="form">
+					<h1>join our community - subscribe</h1>
+					<div class="row">
+						<input class="subscriptionField" type="text" name="firstname">
+						<button class="subscriptionButton">
+							<i class="fas fa-check fa-3x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="downloadIt">
+			<div class="container">
+				<div class="row">
+					<h1>download it</h1>
+				</div>
+				<div class="row">
+					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+				</div>
+				<div class="row">
+					<button class="downloadSoft">
+						<div class="text col-xs-10">apple store</div>
+						<div class="col-xs-2"><i class="fab fa-apple fa-2x"></i></div>
+					</button>
+					<button class="downloadSoft">
+						<div class="text col-xs-10">android store</div>
+						<div class="col-xs-2"><i class="fab fa-android fa-2x"></i></div>
+					</button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class=content>
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
+					<div class="row">
+						<div class="section">
+							<p><a href="javascript:;">credits</a></p>
+							<span>|</span>
+							<p><a href="javascript:;">privacy</a></p>
+							<span>|</span>
+							<p><a href="javascript:;">our teams</a></p>
+						</div>
+					</div>
+					<div class="row">
+						<p>Copyright by phototime - all rights reserved</p>
+					</div>
+				</div>
+				<div class="col-md-5"></div>
+				<div class="col-md-1"> 
+					<img src="images/06. camera.png" alt="camera" />
+				</div>
+			</div>
+		</footer>
 		<script type="text/javascript" src="js/scripts.js"></script>
 	</body>
 </html>

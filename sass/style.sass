@@ -9,6 +9,8 @@ $color-white: #ffffff
 $color-black: #000000
 $color-greenButton: #16a085
 $color-grayBackground: #f5f6f7
+$color-brown: #252626
+$color-lightGreenButton: #1abc9c
 
 *
 	padding: 0
@@ -29,7 +31,7 @@ $color-grayBackground: #f5f6f7
 .jumbotron
 	background-image: url("../images/01. header.png")
 	height: 100%
-	max-height: 750px
+	max-height: 900px
 	background-position: center
 	background-repeat: no-repeat
 	background-size: cover
@@ -88,6 +90,8 @@ $color-grayBackground: #f5f6f7
 	background-color: $color-grayBackground
 	.container
 		.left-side
+			margin-top: 50px
+
 			.btn-success, .btn-success:hover, .btn-success:active, .btn-success:visited
 				margin-top: 20px
 				background-color: $color-greenButton
@@ -100,7 +104,7 @@ $color-grayBackground: #f5f6f7
 				margin-bottom: 50px
 
 			.shape
-				shape-outside: polygon(400px 0px, 400px 400px, 100px 400px, 100px 320px);
+				shape-outside: polygon(400px 0px, 400px 400px, 100px 400px, 100px 320px)
 				width: 400px
 				height: 400px
 				float: right
@@ -162,6 +166,7 @@ $color-grayBackground: #f5f6f7
 
 .ourCommunity
 	background-color: $color-grayBackground
+	padding: 75px 0
 
 	.container
 		.row
@@ -169,6 +174,132 @@ $color-grayBackground: #f5f6f7
 				margin-top: 50px
 				float: right
 
+			.col-md-8
+				.carousel-inner
+					.active.left 
+						left: -50%
 
+				.carousel-inner
+					.next
+						left:  50%
 
+				.carousel-inner
+					.prev
+						left: -50%
+
+				.carousel-control.left,
+				.carousel-control.right
+					background-image: none
+
+.subscription
+	.jumbotron
+		background-image: url("../images/05. background.png")
+		height: 100%
+		max-height: 900px
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		overflow: hidden
+		border-radius: 0 !important
+		margin-bottom: 0 !important
+
+		.form
+			display: flex
+			align-items: center
+			flex-direction: column
+			margin: 300px 0 450px 0
+
+			h1
+				color: $color-white
+				text-transform: capitalize
+				font-family: $fonts-Comfortaa
+				margin-bottom: 20px
+
+			.row
+				.subscriptionField 
+					float: left
+					height: 60px
+					width: 350px
+					font-size: 48px
+					font-family: $fonts-Comfortaa
+					font-weight: 200
+					color: $color-brown
+					border-top-left-radius: 10px
+					border-bottom-left-radius: 10px
+
+				.subscriptionButton 
+					height: 60px
+					width: 100px
+					border-top-right-radius: 10px
+					border-bottom-right-radius: 10px
+					background-color: $color-greenButton
+					border: none
+					text-align: center
+					text-decoration: none
+
+					.fas 
+						color: $color-white
+
+.downloadIt
+	background-color: $color-grayBackground
+	padding-top: 75px
+	padding-bottom: 75px
+
+	.container
+		display: flex
+		flex-direction: column
+
+		.row
+			margin: 0 auto
+			display: flex
+			flex-direction: row
+
+			h1,
+			p
+				color: $color-black
+				text-transform: uppercase
+				font-family: $fonts-Comfortaa
+
+			.downloadSoft
+				width: 300px
+				height: 50px
+				margin: 75px 20px
+				background: linear-gradient(to right, #1abc9c 85%, #16a085 85%);
+				border-radius: 5px
+				border: none
+				color: $color-white
+				font-family: $fonts-Comfortaa
+				display: flex
+				align-items: center
+
+				.text
+					font-size: 20px
+					text-transform: uppercase
+					font-weight: bold
+					letter-spacing: 2px
+
+footer
+	.content
+		display: flex
+		align-items: center
+		height: 150px
+
+	.row
+		p
+			padding: 0px 10px
+			color: $color-black
+			font-weight: bold
+			letter-spacing: 2px
+
+			a
+				color: $color-black
+				text-transform: uppercase
+
+		span
+			color: $color-greenButton
+			font-weight: bolder
+
+	.section
+		display: flex
+		flex-direction: row
 
