@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla One");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.col-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background-image: url("../images/01. header.png");
+  height: 100%;
+  max-height: 750px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.jumbotron .container h1,
+.jumbotron .container p {
+  color: #ffffff;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Comfortaa";
+}
+
+.jumbotron .container h1 {
+  margin-top: 150px;
+}
+
+.jumbotron .container .btn-success, .jumbotron .container .btn-success:hover, .jumbotron .container .btn-success:active, .jumbotron .container .btn-success:visited {
+  margin-top: 20px;
+  background-color: #16a085;
+  border-color: #16a085;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.jumbotron .container .navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.jumbotron .container .navbar .navbar-nav {
+  list-style-type: none;
+}
+
+.jumbotron .container .navbar .navbar-nav .nav-item {
+  padding: 0 50px;
+}
+
+.jumbotron .container .navbar .navbar-nav .nav-item a {
+  text-transform: capitalize;
+  color: #ffffff;
+  font-family: "Fjalla One";
+  font-size: 20px;
+  line-height: 100px;
+}
+
+.jumbotron .container .media .row {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.jumbotron .container .media .row .icon {
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.phoneInHand {
+  background-color: #f5f6f7;
+}
+
+.phoneInHand .container .left-side .btn-success, .phoneInHand .container .left-side .btn-success:hover, .phoneInHand .container .left-side .btn-success:active, .phoneInHand .container .left-side .btn-success:visited {
+  margin-top: 20px;
+  background-color: #16a085;
+  border-color: #16a085;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+}
+
+.phoneInHand .container .left-side .shape {
+  shape-outside: polygon(400px 0px, 400px 400px, 100px 400px, 100px 320px);
+  width: 400px;
+  height: 400px;
+  float: right;
+}
+
+.phoneInHand .container h2,
+.phoneInHand .container p {
+  color: #000000;
+  text-transform: capitalize;
+  font-family: "Comfortaa";
+}
+
+.phoneInHand .container p {
+  margin-top: 50px;
+}
+
+.phoneInHand .container .row {
+  display: flex;
+  align-items: flex-end;
+}
+
+.greenPhone .container .row {
+  margin-top: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.greenPhone .container .row .right-side h2,
+.greenPhone .container .row .right-side p {
+  color: #000000;
+  text-transform: capitalize;
+  font-family: "Comfortaa";
+}
+
+.greenPhone .container .row .right-side p {
+  margin-top: 50px;
+}
+
+.greenPhone .container .row .right-side .btn-success, .greenPhone .container .row .right-side .btn-success:hover, .greenPhone .container .row .right-side .btn-success:active, .greenPhone .container .row .right-side .btn-success:visited {
+  margin-top: 20px;
+  background-color: #16a085;
+  border-color: #16a085;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.greenPhone .container .row .right-side .counter {
+  margin-bottom: 100px;
+}
+
+.greenPhone .container .row .right-side .pager {
+  float: left;
+  margin-top: 0 !important;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 3px;
+}
+
+.greenPhone .container .row .right-side .pager .chevrons a {
+  padding: 0 3px;
+  margin-bottom: 20px;
+}
+
+.ourCommunity {
+  background-color: #f5f6f7;
+}
+
+.ourCommunity .container .row .chevrons {
+  margin-top: 50px;
+  float: right;
+}
+
+/*# sourceMappingURL=style.css.map */
