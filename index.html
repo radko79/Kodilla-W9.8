@@ -10,26 +10,36 @@
 		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
+	
+	
 	<body>
 		<div class="jumbotron">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<nav class="navbar navbar-expand-lg navbar-light">
-						<ul class="navbar-nav mr-auto">
-							<li class="nav-item active">
-								<a class="nav-link" href="javascript:;">home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="javascript:;">photoapp</a>
-							</li>
-							<a class="navbar-brand"><img src="images/01. camera.png" alt="camera"></a>
-							<li class="nav-item">
-								<a class="nav-link" href="javascript:;">design</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="javascript:;">download</a>
-							</li>
-						</ul>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbar">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item active">
+									<a class="nav-link" href="javascript:;">home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="javascript:;">photoapp</a>
+								</li>
+								<a class="navbar-brand"><img src="images/01. camera.png" alt="camera"></a>
+								<li class="nav-item">
+									<a class="nav-link" href="javascript:;">design</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="javascript:;">download</a>
+								</li>
+							</ul>
+						</div>
 					</nav>
 				</div>
 				<h1>your life, a photo</h1>
@@ -37,44 +47,42 @@
 				<button class="center-block btn-lg btn-success">get started</button>
 				<div class="media">
 					<div class="row">
-						<div class="col-xs-5"></div>
-						<div class="col-xs-2">
+						<div class="col-sm-12 col-md-6 col-lg-5 col-xl-5"></div>
+						<div class="col-lg-2 col-xl-2">
 							<i class="icon fab fa-twitter fa-2x"></i>
 							<i class="icon fab fa-flickr fa-2x"></i>
 							<i class="icon fab fa-dribbble fa-2x"></i>
 						</div>
-						<div class="col-xs-5"></div>
+						<div class="col-sm-12 col-md-6 col-lg-5 col-xl-5"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="phoneInHand">
 			<div class="container">
-				<div class="row">
-					<div class="left-side col-xs-6">
-						<div class="shape"></div>
-						<h2>represent your life with a simple photo</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<button class="btn-lg btn-success">get started</button>
-					</div>
-					<div class="right-side col-xs-6">
-						<img class="phone" src="images/02. phone.png" alt="Phone">
-					</div>
+				<div class="left-side col-xl-6">
+					<div class="shape"></div>
+					<h2>represent your life with a simple photo</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<button class="btn-lg btn-success">get started</button>
+				</div>
+				<div class="right-side col-xl-6">
+					<img class="phone" src="images/02. phone.png" alt="Phone">
 				</div>
 			</div>
 		</div>
 		<div class="greenPhone">
 			<div class="container">
 				<div class="row">
-					<div class="left-side col-xs-6">
+					<div class="left-side col-sm-12 col-md-12 col-lg-6 col-xl-6">
 						<img class="phone" src="images/03. phone.png" alt="Phone">
 					</div>
-					<div class="right-side col-xs-6">
+					<div class="right-side col-sm-12 col-md-12 col-lg-6 col-xl-6">
 						<div id="myCarousel" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner">
 								<div class="item active">
@@ -142,39 +150,39 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
 						<div class="col-centered">
 							<img class="photo" src="images/06. camera.png">
 							<h2>our community</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 						</div>
 					</div>
-					<div class="col-md-9">
+					<div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
 						<div class="carousel slide" id="otherCarousel">
 							<div class="carousel-inner">
 								<div class="item active">
-									<div class="col-md-6"><a href="javascript:;"><img src="images/04. car.png" class="img-responsive"></a></div>
+									<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><a href="javascript:;"><img src="images/04. car.png" class="img-responsive"></a></div>
 								</div>
 								<div class="item">
-									<div class="col-md-6"><a href="javascript:;"><img src="images/04. leaves.png" class="img-responsive"></a></div>
+									<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><a href="javascript:;"><img src="images/04. leaves.png" class="img-responsive"></a></div>
 								</div>
 								<div class="item">
-									<div class="col-md-6"><a href="javascript:;"><img src="images/04. baloon.png" class="img-responsive"></a></div>
+									<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><a href="javascript:;"><img src="images/04. baloon.png" class="img-responsive"></a></div>
 								</div>
 								<div class="item">
-						 			<div class="col-md-6"><a href="javascript:;"><img src="images/04. birds.png" class="img-responsive"></a></div>
+						 			<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><a href="javascript:;"><img src="images/04. birds.png" class="img-responsive"></a></div>
 								</div>
 								<div class="item">
-									<div class="col-md-6"><a href="javascript:;"><img src="images/04. gorilla.png" class="img-responsive"></a></div>
+									<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><a href="javascript:;"><img src="images/04. gorilla.png" class="img-responsive"></a></div>
 								</div>
 								<div class="item">
-									<div class="col-md-6"><a href="javascript:;"><img src="images/04. nebula.png" class="img-responsive"></a></div>
+									<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><a href="javascript:;"><img src="images/04. nebula.png" class="img-responsive"></a></div>
 								</div>
 								<div class="item">
-									<div class="col-md-6"><a href="javascript:;"><img src="images/04. panda.png" class="img-responsive"></a></div>
+									<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><a href="javascript:;"><img src="images/04. panda.png" class="img-responsive"></a></div>
 								</div>
 								<div class="item">
-									<div class="col-md-6"><a href="javascript:;"><img src="images/04. seagull.png" class="img-responsive"></a></div>
+									<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><a href="javascript:;"><img src="images/04. seagull.png" class="img-responsive"></a></div>
 								</div>
 							</div>
 						</div>
@@ -204,21 +212,23 @@
 					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
 				</div>
 				<div class="row">
-					<button class="downloadSoft">
-						<div class="text col-xs-10">apple store</div>
-						<div class="col-xs-2"><i class="fab fa-apple fa-2x"></i></div>
-					</button>
-					<button class="downloadSoft">
-						<div class="text col-xs-10">android store</div>
-						<div class="col-xs-2"><i class="fab fa-android fa-2x"></i></div>
-					</button>
+					<div class="buttons">
+						<button class="downloadSoft">
+							<div class="text col-sm-10 col-md-10 col-lg-10 col-xl-10">apple store</div>
+							<div class="col-sm-2 col-md-2 col-lg-2 col-xl-2"><i class="fab fa-apple fa-2x"></i></div>
+						</button>
+						<button class="downloadSoft">
+							<div class="text col-sm-10 col-md-10 col-lg-10 col-xl-10">android store</div>
+							<div class="col-sm-2 col-md-2 col-lg-2 col-xl-2"><i class="fab fa-android fa-2x"></i></div>
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
 		<footer>
 			<div class=content>
-				<div class="col-md-1"></div>
-				<div class="col-md-5">
+				<div class="col-xl-1"></div>
+				<div class="col-sm-6 col-md-6 col-lg-12 col-xl-11">
 					<div class="row">
 						<div class="section">
 							<p><a href="javascript:;">credits</a></p>
@@ -232,12 +242,16 @@
 						<p>Copyright by phototime - all rights reserved</p>
 					</div>
 				</div>
-				<div class="col-md-5"></div>
-				<div class="col-md-1"> 
+				<div class="col-sm-6 col-md-6 col-lg-12 col-xl-11"></div>
+				<div class="col-xl-1"> 
 					<img src="images/06. camera.png" alt="camera" />
 				</div>
 			</div>
 		</footer>
+		
+		<!-- Scripts -->
+    	<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
 	</body>
 </html>
